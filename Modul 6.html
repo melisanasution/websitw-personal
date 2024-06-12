@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript Library</title>
+<script src="https://code.jquery.com/jquery-2.2.0.Min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<style>table{width:100%;border-collapse:collapse}th,td{padding:8px;text-align:left;border-bottom:1px solid #ddd}tr:hover{background-color:#ff0}.highlight{background-color:#fff}body{background-color:#f5f5dc}</style>
+</head>
+<body>
+<h1 style="text-align: center; color: rgba(0, 255, 136, 0.845); background: rgb(16, 16, 36);">Perpustakaan Suka Baca</h1>
+<h3 style="text-align: center; color: black;">Selamat datang di Perpustakaan Bikin Cerdas . Dibawah ini merupakan beberapa koleksi buku yang dimiliki oleh Pepustakaan Suka Baca.<br> Ketik judul buku pada kolom Search untuk mempercepat pencarian!</h3>
+<table id="library-table">
+<thead>
+<tr>
+<th>Judul Buku</th>
+<th>Penulis</th>
+<th>Tahun Terbit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>soal-jawab Evaluasi Proyek</td>
+<td></td>BPEFE</td>
+<td></td>1982</td>
+</tr>
+<tr>
+<td>100% Diet Sehat Dan Hebat</td>
+<td>Sweet and Maxwell</td>
+<td>2013</td>
+</tr>
+<tr>
+<td>100(Seratus) Teknik Meningkatkan laba</td>
+<td>Pustaka Bangsa Press dan FH-USU</td>
+<td>1986</td>
+</tr>
+<tr>
+<td>450 Tanya Jawab Hukum Agraria</td>
+<td>Mandar maju</td>
+<td>1994</td>
+</tr>
+<tr>
+<td>101 Problem Solving Dan Masalah Pemasaran Produk</td>
+<td>Laksana</td>
+<td>2014</td>
+</tr>
+<tr>
+<td>Lembaga negara republik indonesia tahun 1951 No.1-122</td>
+<td>Departemen hukum Dan Hak Asasi Manusia Republik Indonesia </td>
+<td>1951</td>
+</tr>
+<tr>
+<td>Hukum kepolisian Kemiliteran </td>
+<td>Pustaka Baru press</td>
+<td>2022</td>
+</tr>
+<tr>
+<td>Segi-segi Hukum Dalam Perjanjian Perkawinan</td>
+<td>Commonwealth</td>
+<td>1981</td>
+</tr>
+<tr>
+<td>10 Kuliah Mengenai Hukum Koperasi </td>
+<td>Rehaal Pustaka</td>
+<td>2012</td>
+</tr>
+<tr>
+<td>1000 Pepatah-Pepitih-Mamang-Bidal-Pantun-Gurindam-;Bidang sosial budaya - ekonomi -politik-hukum-hankam-agama</td>
+<td>Ramadja karya</td>
+<td>1988</td>
+</tr>
+<tr>
+<td>40 Masalah Agama </td>
+<td>Pustaka Sinar Harapan </td>
+<td>1994</td>
+</tr>
+<tr>
+<td>Memaafkan yang tak termanfaat </td>
+<td>Alex Media komputindo</td>
+<td>2021</td>
+</tr>
+<tr>
+<td>Al-Quran dan Masalah lingkungan hidup</td>
+<td>Lippincot Williams dan wikinds</td>
+<td>2000</td>
+</tr>
+</tbody>
+</table>
+<script>$(document).ready(function(){$("#library-table").DataTable({paging:false,searching:true,ordering:true});$("tr").mouseover(function(){$(this).addClass("highlight");});$("tr").mouseout(function(){$(this).removeClass("highlight");});$("th").addClass("animate_animated animate_bounce");});</script>
+</body>
+</html>
